@@ -1,14 +1,14 @@
-package uk.ashleybye.tictactoe.core.player;
+package uk.ashleybye.tictactoe.console;
 
 import java.util.Objects;
 import uk.ashleybye.tictactoe.core.board.Mark;
 
-public class MockPlayerTwoMark implements Mark {
+public class MockPlayerOneMark implements Mark {
 
   private final String mark;
 
-  public MockPlayerTwoMark() {
-    this.mark = "O";
+  public MockPlayerOneMark() {
+    this.mark = "X";
   }
 
   @Override
@@ -24,7 +24,7 @@ public class MockPlayerTwoMark implements Mark {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    MockPlayerTwoMark that = (MockPlayerTwoMark) o;
+    MockPlayerOneMark that = (MockPlayerOneMark) o;
     return Objects.equals(mark, that.mark);
   }
 

@@ -1,20 +1,19 @@
-package uk.ashleybye.tictactoe.core.player;
+package uk.ashleybye.tictactoe.console;
 
 import java.util.Objects;
-import uk.ashleybye.tictactoe.core.ClientInterface;
 import uk.ashleybye.tictactoe.core.Game;
 import uk.ashleybye.tictactoe.core.board.Mark;
+import uk.ashleybye.tictactoe.core.player.Player;
+import uk.ashleybye.tictactoe.core.player.PlayerType;
 
-public class HumanPlayer implements Player {
+public class MockPlayer implements Player {
 
   private final Mark mark;
   private final String name;
-  private final ClientInterface clientInterface;
 
-  public HumanPlayer(Mark mark, String name, ClientInterface clientInterface) {
+  public MockPlayer(Mark mark, String name) {
     this.mark = mark;
     this.name = name;
-    this.clientInterface = clientInterface;
   }
 
   @Override
@@ -29,12 +28,17 @@ public class HumanPlayer implements Player {
 
   @Override
   public int takeTurn(Game game) {
-    return clientInterface.getPlayersMove();
+    return 0;
   }
 
   @Override
   public PlayerType getType() {
     return PlayerType.USER;
+  }
+
+  @Override
+  public String toString() {
+    return "MockPlayer{" + "mark=" + mark + '}';
   }
 
   @Override
@@ -45,7 +49,7 @@ public class HumanPlayer implements Player {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    HumanPlayer that = (HumanPlayer) o;
+    MockPlayer that = (MockPlayer) o;
     return Objects.equals(mark, that.mark) &&
         Objects.equals(name, that.name);
   }

@@ -1,11 +1,8 @@
-package uk.ashleybye.tictactoe.core;
+package uk.ashleybye.tictactoe.console;
 
 import uk.ashleybye.tictactoe.console.game.ConsoleGameConfiguration;
 import uk.ashleybye.tictactoe.console.game.ConsolePlayerConfiguration;
 import uk.ashleybye.tictactoe.core.board.Mark;
-import uk.ashleybye.tictactoe.core.player.MockEmptyMark;
-import uk.ashleybye.tictactoe.core.player.MockPlayerOneMark;
-import uk.ashleybye.tictactoe.core.player.MockPlayerTwoMark;
 
 public class MockGameConfiguration extends ConsoleGameConfiguration {
 

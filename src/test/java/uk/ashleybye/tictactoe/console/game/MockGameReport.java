@@ -2,11 +2,11 @@ package uk.ashleybye.tictactoe.console.game;
 
 import java.util.HashMap;
 import java.util.Map;
+import uk.ashleybye.tictactoe.console.MockEmptyMark;
+import uk.ashleybye.tictactoe.console.MockPlayerOneMark;
+import uk.ashleybye.tictactoe.console.MockPlayerTwoMark;
 import uk.ashleybye.tictactoe.core.GameReport;
 import uk.ashleybye.tictactoe.core.board.Mark;
-import uk.ashleybye.tictactoe.core.player.MockEmptyMark;
-import uk.ashleybye.tictactoe.core.player.MockPlayerOneMark;
-import uk.ashleybye.tictactoe.core.player.MockPlayerTwoMark;
 
 public class MockGameReport extends GameReport {
 

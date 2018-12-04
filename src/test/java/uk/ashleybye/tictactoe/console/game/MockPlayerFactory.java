@@ -2,9 +2,9 @@ package uk.ashleybye.tictactoe.console.game;
 
 import java.util.Arrays;
 import java.util.List;
-import uk.ashleybye.tictactoe.core.player.MockPlayer;
-import uk.ashleybye.tictactoe.core.player.MockPlayerOneMark;
-import uk.ashleybye.tictactoe.core.player.MockPlayerTwoMark;
+import uk.ashleybye.tictactoe.console.MockPlayer;
+import uk.ashleybye.tictactoe.console.MockPlayerOneMark;
+import uk.ashleybye.tictactoe.console.MockPlayerTwoMark;
 import uk.ashleybye.tictactoe.core.player.Player;
 import uk.ashleybye.tictactoe.core.player.PlayerConfiguration;
 

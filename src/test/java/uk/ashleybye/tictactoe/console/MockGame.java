@@ -1,20 +1,15 @@
-package uk.ashleybye.tictactoe.core;
+package uk.ashleybye.tictactoe.console;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import uk.ashleybye.tictactoe.TestHelpers;
+import uk.ashleybye.tictactoe.core.Game;
+import uk.ashleybye.tictactoe.core.GameReport;
 import uk.ashleybye.tictactoe.core.board.Board.InvalidSquareNumber;
 import uk.ashleybye.tictactoe.core.board.Board.SquareUnavailable;
-import uk.ashleybye.tictactoe.core.player.MockEmptyMark;
-import uk.ashleybye.tictactoe.core.player.MockPlayer;
-import uk.ashleybye.tictactoe.core.player.MockPlayerOneMark;
-import uk.ashleybye.tictactoe.core.player.MockPlayerTwoMark;
 
 public class MockGame extends Game {
 
-  private MockPlayer playerOne = new MockPlayer(new MockPlayerOneMark(), "Player 1");
-  private MockPlayer playerTwo = new MockPlayer(new MockPlayerTwoMark(), "Player 2");
   private List<Boolean> isGameOver = new ArrayList<>();
   private int numberOfTimesIsGameOverCalled = 0;
   private int getNumberOfTimesGenerateGameReportCalled = 0;
@@ -49,13 +44,7 @@ public class MockGame extends Game {
   @Override
   public GameReport generateGameReport() {
     getNumberOfTimesGenerateGameReportCalled++;
-    GameReport report = new GameReport();
-    report.setCurrentBoard(TestHelpers.generateBoard("X - - - - - - - -"));
-    report.setCurrentPlayer(playerTwo);
-    report.setLastPlayer(playerOne);
-    report.setCurrentState(GameState.PLAYING);
-    report.setResult(false, false);
-    return report;
+    return new GameReport();
   }
 
   public void addIsGameOver(Boolean isGameOver) {

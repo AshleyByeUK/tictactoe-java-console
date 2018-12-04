@@ -1,15 +1,15 @@
-[![Build Status](https://travis-ci.org/AshleyByeUK/tictactoe-java-core.svg?branch=master)](https://travis-ci.org/AshleyByeUK/tictactoe-java-core)
-[![codecov](https://codecov.io/gh/AshleyByeUK/tictactoe-java-core/branch/master/graph/badge.svg)](https://codecov.io/gh/AshleyByeUK/tictactoe-java-core)
+[![Build Status](https://travis-ci.org/AshleyByeUK/tictactoe-java-console.svg?branch=master)](https://travis-ci.org/AshleyByeUK/tictactoe-java-console)
+[![codecov](https://codecov.io/gh/AshleyByeUK/tictactoe-java-console/branch/master/graph/badge.svg)](https://codecov.io/gh/AshleyByeUK/tictactoe-java-console)
 
-# tictactoe-java-core
+# tictactoe-java-console
 
 ## Introduction
 
-A game of TicTacToe that can be played in the console r graphical user interface. Features include Human vs Human,
-Human vs Computer and Computer vs Computer modes. The computer player can be configured for easy and hard difficulties.
+A game of [TicTacToe](https://github.com/AshleyByeUK/tictactoe-java-core) that can be played in the console.
+Features include Human vs Human, Human vs Computer and Computer vs Computer modes. The computer player can be
+configured for easy and hard difficulties.
 
 ![Console Game Play Screenshot](images/console-screenshot.png)
-![Graphical Game Play Screenshot](images/graphical-screenshot.png)
 
 ## Requirements
 
@@ -25,7 +25,7 @@ has not been tested with older versions of Java, you may find that versions as o
 
 There are several ways that you can play TicTacToe. First, you'll need to clone this repository:
 
-`git clone git@github.com:AshleyByeUK/game-java-core.git`
+`git clone git@github.com:AshleyByeUK/tictactoe-java-console.git`
 
 You can then use Gradle to run the game or to build a JAR file. The following sections explain how to do this and
 assume you are in the root directory of the project.
@@ -34,7 +34,7 @@ assume you are in the root directory of the project.
 
 To run with Gradle, execute the following command:
 
-`./gradlew --console plain run console`
+`./gradlew --console plain run`
 
 You can omit the `--console plain` flag, but you will have to put up with Gradle build information being displayed
 in the user interface. This is also quite slow and game play is jittery.
@@ -47,7 +47,7 @@ To build a JAR file, execute the following command:
 
 This will build a JAR file in the root directory of the project. You can then run the JAR file as follows:
 
-`java -jar out/game.jar [console]`
+`java -jar build/tictactoe-java-console.jar`
 
 Game play using this method is much smoother.
 
